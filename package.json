@@ -1,0 +1,20 @@
+{
+  "name": "rollup-plugin-entrypoint-hashmanifest",
+  "version": "0.0.1",
+  "description": "A rollup plugin that generates a hash manifest for each entrypoint",
+  "main": "index.js",
+  "scripts": {
+    "fmt": "prettier --write *.js *.md *.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Surma <surma@google.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "prettier": "1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surma/rollup-plugin-entrypoint-hashmanifest"
+  },
+  "dependencies": {}
+}
