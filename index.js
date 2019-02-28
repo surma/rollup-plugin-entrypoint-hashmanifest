@@ -16,7 +16,7 @@ const defaults = {
   manifestName: "entrypoint.hashmanifest.json"
 };
 
-export default function(opts = {}) {
+module.exports = function(opts = {}) {
   opts = Object.assign({}, defaults, opts);
   let inputs;
   return {
