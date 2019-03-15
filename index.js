@@ -36,7 +36,7 @@ module.exports = function(opts = {}) {
         resolvedInputs => {
           for (const key of Object.keys(bundle)) {
             const idx = resolvedInputs.findIndex(
-              input => input in bundle[key].modules
+              input => input in (bundle[key].modules || {})
             );
             if (idx !== -1) {
               map[inputs[idx]] = bundle[key].fileName;
