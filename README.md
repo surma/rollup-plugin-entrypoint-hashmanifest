@@ -10,7 +10,7 @@ $ npm install --save rollup-plugin-entrypoint-hashmanifest
 
 ```js
 // rollup.config.js
-import entrypointHashmanifest from "rollup-plugin-entrypoint-";
+import entrypointHashmanifest from "rollup-plugin-entrypoint-hashmanifest";
 
 export default {
   input: ["src/main.js", "src/worker.js", "src/serviceworker.js"],
