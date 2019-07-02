@@ -3,7 +3,7 @@
 A [rollup] plugin that generates a hash manifest for each entrypoint file you give. The manifest is compatible with the one emitted by [hashmark] and can be processed by tools like [injectassets] (née [replaceinfiles]).
 
 ```
-$ npm install --save rollup-plugin-hashmanifest
+$ npm install --save rollup-plugin-entrypoint-hashmanifest
 ```
 
 ## Usage
