@@ -32,11 +32,11 @@ module.exports = function(opts = {}) {
     },
     generateBundle(_outputOptions, bundle) {
       let map = {};
-      return Promise.all(inputs.map(id => this.resolveId(id))).then(
+      return Promise.all(inputs.map(id => this.resolve(id))).then(
         resolvedInputs => {
           for (const key of Object.keys(bundle)) {
             const idx = resolvedInputs.findIndex(
-              input => input in (bundle[key].modules || {})
+              input => input.id in (bundle[key].modules || {})
             );
             if (idx !== -1) {
               map[inputs[idx]] = bundle[key].fileName;
